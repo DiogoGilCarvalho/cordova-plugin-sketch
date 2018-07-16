@@ -227,7 +227,7 @@ public class TouchDrawActivity extends Activity {
                 if (mPaint != null && position >= 0 && position < STROKE_COLOUR_VALUES.length) {
                     mPaint.setColor(STROKE_COLOUR_VALUES[position]);
 
-                    adapterView.setBackgroundColor(STROKE_COLOUR_VALUES[position]);
+                    adapterView.setBackgroundColor(Color.WHITE);
                     ((TextView) view).setText(strokeColourLabelPrefix + STROKE_COLOUR_LABELS[position]);
                 }
             }
@@ -280,6 +280,7 @@ public class TouchDrawActivity extends Activity {
 
                 if (mPaint != null) {
                     mPaint.setStrokeWidth(mStrokeWidth);
+                    adapterView.setBackgroundColor(Color.WHITE);
                 }
             }
 
